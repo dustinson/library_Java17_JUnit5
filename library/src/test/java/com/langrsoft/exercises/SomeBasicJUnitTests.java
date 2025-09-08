@@ -11,13 +11,13 @@ import static org.assertj.core.api.Assertions.assertThat;
 import static org.assertj.core.api.Assertions.within;
 
 class SomeBasicJUnitTests {
-    @Disabled("uncomment when ready")
+//    @Disabled("uncomment when ready")
     @Test
     void supportsBasicMath() {
         assertThat(4 * 8).isEqualTo(32);
     }
 
-    @Disabled("uncomment when ready")
+//    @Disabled("uncomment when ready")
     @Test
     void appendsItemToListUsingAdd() {
         var numbers = new ArrayList<>(asList(12, 1, 1, 1, 2, 1, 3));
@@ -27,7 +27,7 @@ class SomeBasicJUnitTests {
         assertThat(numbers).isEqualTo(asList(12, 1, 1, 1, 2, 1, 3, 1));
     }
 
-    @Disabled("uncomment when ready")
+//    @Disabled("uncomment when ready")
     @Test
     void doublesEachElementInAList() {
         List<Integer> numbers = List.of(2, 5, 10, 105);
@@ -39,7 +39,7 @@ class SomeBasicJUnitTests {
         assertThat(result).isEqualTo(asList(4, 10, 20, 210));
     }
 
-    @Disabled("uncomment when ready")
+//    @Disabled("uncomment when ready")
     @Test
     void handlesInterestingFloatPointResults() {
         var result = 0.1 + 0.2;
